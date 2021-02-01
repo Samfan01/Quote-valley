@@ -1,3 +1,18 @@
 .d-flex{
-    margin-left: 55%;
+    margin-left: 70%;
+}
+.navbar-brand{
+        color: brown;
+        font-size: x-large;
+        font-style: unset;
+}
+.create{
+margin-left: 30%;
+
+}
+.navbar{
+     font-size: larger;
+     font-weight: bolder;
+     font-style: oblique;
+     display: inherit;
 }
