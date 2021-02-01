@@ -1,0 +1,11 @@
+
+
+.panel{
+    text-align: center;
+    height:595px;
+    background-color: whitesmoke;
+    border: 5px solid black;
+}
+.panel h1{
+    text-decoration: underline;
+}
