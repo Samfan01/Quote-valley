@@ -1,5 +1,17 @@
 # QuoteValley
 
+#### {THis is a page that processes and gives informative quotes}, {Date of current version}
+ By **{Douglas Samphan}**
+## Description
+{This is a web Application that allows users write and vote on available quotes.
+## Setup/Installation Requirements
+* This webpage is not to be installed.
+## Known Bugs
+{}
+## Technologies Used
+{The Mark up language used is HTML which is styled by Css and Javascript with Angular as a framework}
+## Support and contact details
+{Reach the creater of the web page for any questions or comments through dsamfan@gmail.com}
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
 
 ## Development server
