@@ -1,3 +1,11 @@
-<figcaption class="blockquote-footer">
-    {{quote.name}} <cite title="Source Title">{{quote.vote}}</cite>
+<div class="container-fluid" >
+<figcaption class="blockquote-footer" *ngIf='quote' id="detail">
+    {{quote.name}} 
+    <hr>
+    <h6>This quote was posted by {{quote.author}}</h6>
+    <h6>This quote was posted on </h6><cite title="Source Title">{{quote.date|dateCount}}</cite>
   </figcaption>
+  <button class='btn btn-primary'(click)= 'quoteWritten(true)' *ngIf='quote'>Delete</button>
+   
+
+  </div>
