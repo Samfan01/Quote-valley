@@ -1,1 +1,9 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+
+
+#detail{
+    background-color: pink;
+    height: 130px;
+    color:black;
+    font-weight: bolder;
+    
+}
