@@ -2,7 +2,7 @@
 
 .panel{
     text-align: center;
-    height:595px;
+    height:auto;
     background-color: whitesmoke;
     border: 5px solid black;
     color: black;
