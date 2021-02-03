@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container-fluid" *ngIf='quotes'>
     <div class="row">
         <div class="col-md 6 panel">
             <hr>
@@ -6,12 +6,23 @@
             <ul>
                 <div *ngFor='let quote of quotes;let i = index'>
                     <li>
+                        <div class="row" id="vote" >
+                            <div class="col-md-6">
+                              <button  class='btn btn-success' (click)='upVote(i)' >Upvote</button>
+                              <p *ngIf='quote' >{{quote.upvote}}</p>
+                            </div>
+                            <div class="col-md-6" >
+                              <button *ngIf='quote' class='btn btn-danger'(click)="downVote(i)">Downvote</button>
+                              <p *ngIf='quote'>{{quote.downvote}}</p>
+                            </div>
+                           </div>
                         <figure>
                             <blockquote class="blockquote">
-                                <p>{{quote.quote}}</p>
+                                <p appHighlight *ngIf="hUpvote()===quote.upvote && quote.upvote>0">{{quote.quote}}</p>
+                                <p *ngIf="hUpvote()!==quote.upvote || quote.upvote===0">{{quote.quote}}</p>
                             </blockquote>
-
-                            <app-quote-detail [quote]='quote'></app-quote-detail>
+                            <button class='btn btn-primary'(click)='toggleDetails(i)'>Toggle Details</button>
+                            <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isWritten) = 'quoteWritten($event,i)'></app-quote-detail>
                         </figure>
                     </li>
                 </div>
